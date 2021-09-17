@@ -1,22 +1,35 @@
+
 const buttons = document.querySelectorAll('.btn')
 const products = document.querySelectorAll('.products')
 
 
-buttons.forEach(function (button) {
-    button.addEventListener('click', (event) => {
-        event.preventDefault()
-        /* active button */
+buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault()
         buttons.forEach((button) => {
             button.classList.remove('active')
         })
-        button.className = 'active'
+        button.classList.add('active')
+
+        let targetBtn = e.target.textContent.toLowerCase()
+        if (targetBtn === 'all'){
+            products.forEach(product =>{
+                if(product.classList.contains('hide')){
+                    product.classList.remove('hide')
+                } else {
+                    null
+                }
+            })
+
+            products.forEach(product =>{
+                product.classList.add('hide')
+                if(product.dataset.filter === targetBtn) {
+                    product.classList.remove('hide')
+                } else {
+                    null
+                }
+            })
+        }
     })
-        products.forEach(product => {
-            showProduct = button.textContent
-            
-            product.style.display = 'none'
-            if (product.getAttribute('data-filter') == showProduct.toLowerCase() || showProduct == 'all'){
-                product.style.display = 'block'
-            }
-        })
-}) 
+})
+
