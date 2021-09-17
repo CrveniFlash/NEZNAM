@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-indigo-900 font-mono">
+    <nav class="mt-4 mb-10 text-white">
+        <div class="nav-bar">
+            <ul class="flex flex-row justify-center items-center space-x-8">
+                <li class=" transition transform duaration-100 hover:scale-110">
+                    <a class="active btn filter-btn" href="#">All</a>
+                </li>
+                <li class="transition transform duaration-100 hover:scale-110">
+                    <a class="btn filter-btn" href="#">Cake</a>
+                </li>
+                <li class="transition transform duaration-100 hover:scale-110">
+                    <a class="btn filter-btn" href="#">Cookies</a>
+                </li>
+                <li class="transition transform duaration-100 hover:scale-110">
+                    <a class="btn filter-btn" href="#">Donuts</a>
+                </li>
+                <li class="transition transform duaration-100 hover:scale-110">
+                    <a class="btn filter-btn" href="#">Pudding</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container mx-auto flex flex-row justify-center items-center ">
+            <div class="grid grid-flow-row grid-cols-4 grid-rows-4 gap-10 ">
+                <!-- cakes -->
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='cake' src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='cake' src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- cookies -->
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='cookies' src="https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='cookies' src="https://images.pexels.com/photos/1020585/pexels-photo-1020585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- donuts -->
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='donuts' src="https://images.pexels.com/photos/2955820/pexels-photo-2955820.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='donuts'  src="https://images.pexels.com/photos/3656118/pexels-photo-3656118.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- pudding -->
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='pudding' src="https://images.pexels.com/photos/302468/pexels-photo-302468.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="w-72 products max-w-full border border-gray-300 rounded-sm bg-white">
+                    <div class="w-full h-48">
+                        <img data-filter='pudding' src="https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="products w-full h-full object-cover"/>
+                    </div>
+                    <div class="p-6">
+                      <h5 class="text-lg font-medium">Card title</h5>
+                      <p class="mt-2">
+                        Some simple text that describes what's going on in this very simple card.
+                      </p>
+                      <div class="mt-4 flex">
+                        <a href="https://www.google.com" class="inline-block rounded-sm font-medium border border-solid cursor-pointer text-center transition-colors duration-200 text-base py-3 px-6 text-white bg-green-400 border-green-400 hover:bg-green-600 hover:border-green-600" >View Source</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
