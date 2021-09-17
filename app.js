@@ -6,11 +6,13 @@ const products = document.querySelectorAll('.products')
 buttons.forEach((button) => {
     button.addEventListener('click', (e) => {
         e.preventDefault()
+        // active class
         buttons.forEach((button) => {
             button.classList.remove('active')
         })
         button.classList.add('active')
 
+        //filtering attempt
         let targetBtn = e.target.textContent.toLowerCase()
         if (targetBtn === 'all'){
             products.forEach(product =>{
